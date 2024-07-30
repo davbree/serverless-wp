@@ -31,7 +31,13 @@ exports.handler = async function (event, context, callback) {
         return checkInstall;
     }
     else {
+        
         // Return the response for serving.
         return response;
     }
+}
+
+exports.config = {
+  path: '/*',
+  preferStatic: true,
 }
